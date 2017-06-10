@@ -30,11 +30,19 @@
         <mybatis_version>3.4.2</mybatis_version>
         <jackson_version>2.7.5</jackson_version>
         <spring_version>4.3.9.RELEASE</spring_version>
+        <jersey_version>2.19</jersey_version>
 
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson_version}</version>
+            </dependency>
+
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
@@ -42,9 +50,21 @@
             </dependency>
 
             <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-json-processing</artifactId>
+                <version>${jersey_version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-json-jackson </artifactId>
+                <version>${jersey_version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.glassfish.jersey</groupId>
                 <artifactId>jersey-bom</artifactId>
-                <version>2.19</version>
+                <version>${jersey_version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

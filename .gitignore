@@ -1,2 +1,3 @@
-*.pyc
-venv_dataprovider
+target
+.idea/
+*.iml

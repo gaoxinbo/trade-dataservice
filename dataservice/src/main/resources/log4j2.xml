@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="debug">
     <Properties>
-        <Property name="path">/Users/gaoxinbo/Desktop/prod/log/</Property>
+        <Property name="path">/home/pi/install/apache-tomcat-9.0.0.M21/logs</Property>
     </Properties>
 
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-        <RollingFile name="application" fileName="portal.log"  filePattern="portal.%d{yyyyMMdd}.log">>
+        <RollingFile name="application" fileName="${path}/dataservice.log"  filePattern="${path}/dataservice.%d{yyyyMMdd}.log">>
             <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Policies>
                 <TimeBasedTriggeringPolicy />

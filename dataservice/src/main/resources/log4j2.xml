@@ -8,7 +8,7 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-        <RollingFile name="application" fileName="${path}/portal.log"  filePattern="${path}/portal.%d{yyyyMMdd}.log">>
+        <RollingFile name="application" fileName="portal.log"  filePattern="portal.%d{yyyyMMdd}.log">>
             <PatternLayout pattern="%d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Policies>
                 <TimeBasedTriggeringPolicy />

@@ -48,7 +48,7 @@ echo "current dir : $CURRENT"
 
 cd $CODE_DIR
 
-build && stop_tomcat && backup && copy && start_tomcat
+build && stop_tomcat && backup && copy && start_tomcat && git checkout .
 
 
 

@@ -10,7 +10,7 @@ cd $CURRENT
 
 
 HOST=`hostname`
-TIMESTAMPE=`date +%s`
+TIMESTAMPE=`date +%H:%M:%S`
 DATE=`date +%Y-%m-%d`
 
 

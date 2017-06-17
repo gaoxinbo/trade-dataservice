@@ -28,7 +28,7 @@ public class BuildVersionHandler {
 
     public BuildVersion getBuildVersion() {
         return BuildVersion.builder()
-                .version(properties.getProperty(BUILD_VERSION))
+                .buildVersion(properties.getProperty(BUILD_VERSION))
                 .buildDate(properties.getProperty(BUILD_DATE))
                 .buildHost(properties.getProperty(BUILD_HOST))
                 .build();

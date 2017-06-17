@@ -7,6 +7,6 @@ import lombok.Getter;
 @Builder
 public class BuildVersion {
     String buildDate;
-    String version;
+    String buildVersion;
     String buildHost;
 }
